@@ -51,4 +51,5 @@ gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: '2-4-stable'
 group :development do
   gem "better_errors"
   gem "binding_of_caller"
+  gem "awesome_print"
 end
