@@ -42,7 +42,13 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 
 gem 'mysql2'
+gem 'puma'
 
 gem 'spree', '2.4.2'
 gem 'spree_gateway', github: 'spree/spree_gateway', branch: '2-4-stable'
 gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: '2-4-stable'
+
+group :development do
+  gem "better_errors"
+  gem "binding_of_caller"
+end
