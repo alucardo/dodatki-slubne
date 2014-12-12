@@ -1,0 +1,42 @@
+<%= simple_form_for [:admin, @page], html: {class: "form-horizontal"} do |f| %>
+  <div class="form-group">
+    <%= f.label :title, "Tytuł:", class: "col-sm-4 control-label" %>
+    <div class="col-sm-8" >
+        <%= f.input_field :title, class: "form-control" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :slug, "Link:", class: "col-sm-4 control-label" %>
+    <div class="col-sm-8" >
+        <%= f.input_field :slug, class: "form-control" %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :desc, "Meta description:", class: "col-sm-4 control-label" %>
+    <div class="col-sm-8" >
+        <%= f.input_field :desc, class: "form-control" %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :keywords, "Słowa kluczowe:", class: "col-sm-4 control-label" %>
+    <div class="col-sm-8" >
+        <%= f.input_field :keywords, class: "form-control" %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :body, "Treść:", class: "col-sm-4 control-label" %>
+    <div class="col-sm-8" >
+        <%= f.input_field :body, class: "form-control" %>
+    </div>
+  </div>
+
+
+  <div class="form-group">
+    <div class="col-sm-offset-4 col-sm-8">
+      <%= f.button :submit, "zapisz", class: "btn btn-success" %>
+    </div>
+  </div>
+<% end %>

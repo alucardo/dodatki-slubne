@@ -43,6 +43,7 @@ gem 'spring',        group: :development
 
 gem 'mysql2'
 gem 'puma'
+gem 'simple_form'
 
 gem 'spree', '2.4.2'
 gem 'spree_gateway', github: 'spree/spree_gateway', branch: '2-4-stable'
@@ -52,4 +53,5 @@ group :development do
   gem "better_errors"
   gem "binding_of_caller"
   gem "awesome_print"
+  gem "pry"
 end

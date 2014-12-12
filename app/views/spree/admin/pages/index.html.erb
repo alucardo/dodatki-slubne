@@ -1,0 +1,29 @@
+<div class="container">
+  <h1>Lista stron</h1>
+  <%= link_to "Dodaj strone", new_admin_page_path, class: "btn btn-success", style: "color: #fff;" %>
+  <div class="br-2">
+    <br/>
+    <br/>
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>Tytuł</th>
+        <th>Link</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @pages.each do |p| %>
+        <tr>
+          <td><%= p.title %></td>
+          <td><%= p.slug %></td>
+          <td style="width: 200px;">
+            <%= link_to "Edytuj", edit_admin_page_path(p), class: "btn btn-info" %>
+            <%= link_to "Usuń", admin_page_path(p), method: :delete, class: "btn btn-danger" %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
