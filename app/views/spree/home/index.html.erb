@@ -4,8 +4,25 @@
   <div class="col-sm-3 sidebar">   
     <%= render partial: 'spree/shared/company_sidebar' %>
   </div>
-  <div class="col-sm-9">
+  <div class="col-sm-9 newest">
     <div class="box-heading">Najnowsze Produkty</div>
+    <% @latest_product.each do |p| %>
+      <div class="col-sm-4">
+        <% url = product_path(p) %>
+        <div class="img-container">
+          <%= link_to product_image(p, :itemprop => "image"), url, :itemprop => 'url' %>
+        </div>
+        <div class="description">
+          <%= link_to url do %>
+            <h4><%= p.name %></h4>
+          <% end %>
+          <div>
+            <%=h truncate(p.description, :length => 80) %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+    <div class="clearfix"></div>
   </div>
 </div>
 <% end %>
@@ -21,18 +38,14 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="..." alt="...">
-      <div class="carousel-caption">
-        ...
-      </div>
+      <%= image_tag "baner1.jpg" %>
     </div>
     <div class="item">
-      <img src="..." alt="...">
-      <div class="carousel-caption">
-        ...
-      </div>
+      <%= image_tag "baner2.jpg" %>
     </div>
-    ...
+    <div class="item">
+      <%= image_tag "baner3.jpg" %>
+    </div>
   </div>
 
   <!-- Controls -->
