@@ -28,7 +28,7 @@
       <div class="col-sm-4">      
         
         <div class="img-container">        
-          <%= link_to product_image(product, :itemprop => "image"), url, :itemprop => 'url' %>
+          <%= link_to product_image(product, :itemprop => "image"),  product.images.first.attachment.url(:large, false), "data-toggle" => "lightbox", "data-title" => product.name %>
         </div>   
 
          <div class="description">
@@ -49,3 +49,14 @@
 <% if paginated_products.respond_to?(:num_pages) %>
   <%= paginate paginated_products %>
 <% end %>
+
+<script>
+  $(function(){
+    $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+    }); 
+
+  })
+
+</script>
