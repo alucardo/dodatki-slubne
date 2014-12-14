@@ -10,18 +10,20 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <%= logo %>
+      <a href="/">
+        <%= image_tag "spree/frontend/logo.jpg" %>
+      </a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Strona Główna", "" %></li>    
-        <li><%= link_to "O salonie", "" %></li>    
-        <li><%= link_to "Suknie ślubne", "" %></li>    
-        <li><%= link_to "Obuwie", "" %></li>    
-        <li><%= link_to "Dodatki", "" %></li>    
-        <li><%= link_to "Kontakt", "" %></li>    
+        <li><%= link_to "Strona Główna", "/" %></li>    
+        <li><%= link_to "O salonie", "/o-salonie" %></li>    
+        <li><%= link_to "Suknie ślubne", "/t/kategorie/suknie-slubne" %></li>    
+        <li><%= link_to "Obuwie", "/t/kategorie/obuwie" %></li>    
+        <li><%= link_to "Dodatki", "/t/kategorie/dodatki" %></li>    
+        <li><%= link_to "Kontakt", "/kontakt" %></li>    
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
