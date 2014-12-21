@@ -14,6 +14,5 @@ SitemapGenerator::Sitemap.default_host = "http://#{Spree::Config[:site_url]}"
 SitemapGenerator::Sitemap.sitemaps_host = "http://#{ ENV['FOG_DIRECTORY'] }.s3.amazonaws.com/"
 
 SitemapGenerator::Sitemap.add_links do
-  add_taxons
-  add_products
+
 end
