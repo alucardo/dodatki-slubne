@@ -1,12 +1,4 @@
 GIT
-  remote: git://github.com/jdutil/spree_sitemap.git
-  revision: 23411ca474f63d566c9a7bce0b4f70740c602385
-  specs:
-    spree_sitemap (2.0.0.beta)
-      sitemap_generator (~> 4.3.1)
-      spree_core (~> 2.4.0.beta)
-
-GIT
   remote: git://github.com/spree/spree_auth_devise.git
   revision: 9d51f3d65a1ae6bd5aa1a48b649a1c57e52107a5
   branch: 2-4-stable
@@ -326,8 +318,6 @@ GEM
     simple_form (3.1.0)
       actionpack (~> 4.0)
       activemodel (~> 4.0)
-    sitemap_generator (4.3.1)
-      builder
     slop (3.6.0)
     spree (2.4.2)
       spree_api (= 2.4.2)
@@ -444,7 +434,6 @@ DEPENDENCIES
   spree (= 2.4.2)
   spree_auth_devise!
   spree_gateway!
-  spree_sitemap!
   spring
   turbolinks
   uglifier (>= 1.3.0)
