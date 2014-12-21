@@ -177,6 +177,7 @@ GEM
       mime-types
     paranoia (2.0.4)
       activerecord (~> 4.0)
+    pg (0.17.1)
     polyamorous (1.1.0)
       activerecord (>= 3.0)
     polyglot (0.3.5)
@@ -340,6 +341,7 @@ DEPENDENCIES
   jquery-rails
   meta_request
   mysql2
+  pg
   pry
   puma
   rails (= 4.1.8)

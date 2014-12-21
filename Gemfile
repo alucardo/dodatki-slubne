@@ -56,3 +56,7 @@ group :development, :test do
   gem "pry"
   gem 'mysql2'
 end
+
+group :production do
+  gem 'pg'
+end
