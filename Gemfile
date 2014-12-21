@@ -41,7 +41,6 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 
 
-gem 'puma'
 gem 'simple_form'
 
 gem 'spree', '2.4.2'
@@ -59,4 +58,5 @@ end
 
 group :production do
   gem 'pg'
+  gem 'rails_12factor'
 end
