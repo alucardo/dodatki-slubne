@@ -1,8 +1,0 @@
-<nav id="taxonomies" class="sidebar-item" data-hook>
-  <h4 class='taxonomy-root'>Kategorie</h4>
-  <div class="list-group">
-    <% Spree::Taxonomy.find_by(name: "Kategorie").taxons.where("parent_id IS NOT NULL").each do |taxon| %>
-    <%= link_to raw("<i class='fa fa-circle'></i>  #{taxon.name}"), seo_url(taxon), class: "list-group-item" %>
-    <% end %>
-  </div>
-</nav>
