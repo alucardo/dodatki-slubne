@@ -5,9 +5,16 @@
       border-right: 0
       padding-left: 0
       background: transparent
+      .fa-angle-down
+        float: right
+        font-size: 16px 
+        line-height: 19px
+        position: absolute
+        color: #7f7f7f
+        right: 0
+        top: 4px
     .list-group-item:first-child
-      border-top: 0
-
+      border-top: 0  
     a
       color: #9b9797
       font-size: 12px
@@ -21,3 +28,19 @@
         color: #bfbbb9
       &:hover
         color: #ea4959
+    & > ul
+      padding-left: 0
+      li
+        list-style: none
+        a.list-group-item
+          border: none
+      & > li
+        border-bottom: 1px solid #dddddd
+      ul
+        display: none
+        ul
+          padding-left: 10px
+        
+  a.parent
+    border-bottom: 0 !important
+  

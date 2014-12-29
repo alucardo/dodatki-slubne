@@ -77,4 +77,8 @@ module ApplicationHelper
       end
     end
 
+    def get_child_taxons(id)
+      Spree::Taxon.where( parent_id: id) rescue []
+    end
+
 end
