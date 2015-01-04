@@ -12,7 +12,8 @@ Rails.application.routes.draw do
     namespace :admin do
       resources :pages
     end
-    get "/kontakt", to: "pages#contact"
+    get "/kontakt", to: "pages#contact", as: :contact
+    post "/kontakt", to: "pages#contact_send", as: :contact_send
     get "/:slug", to: "pages#show"
   end
 end

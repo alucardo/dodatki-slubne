@@ -11,11 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141212191134) do
+ActiveRecord::Schema.define(version: 20150102190323) do
 
   create_table "carusel_images", force: true do |t|
     t.string   "image"
     t.string   "desc"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "contacts", force: true do |t|
+    t.string   "title"
+    t.string   "email"
+    t.text     "body"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

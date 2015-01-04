@@ -49,6 +49,7 @@ gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: '2-4-stable'
 gem "paperclip"
 gem 'fog'
 gem 'figaro'
+gem 'aws-sdk', '~> 1.5.7'
 
 group :development, :test do
   gem "better_errors"
@@ -57,6 +58,7 @@ group :development, :test do
   gem "awesome_print"
   gem "pry"
   gem 'mysql2'
+  gem 'mailcatcher'
 end
 
 group :production do

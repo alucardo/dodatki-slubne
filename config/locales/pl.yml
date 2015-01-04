@@ -1,4 +1,5 @@
 pl:
+
   date:
     abbr_day_names:
     - nie
@@ -1342,4 +1343,16 @@ pl:
     zone: Strefa
     zones: Strefy
 
-  
+  activerecord:
+    attributes:
+      contact:
+        body: "Treść"
+        email: "Email zwrotny"
+    errors:
+      models:
+        contact:
+          attributes:
+            email:
+              blank: "nie może być pusty" 
+            body:
+              blank: "nie może być pusta"
