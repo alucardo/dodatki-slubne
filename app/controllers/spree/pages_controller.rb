@@ -9,6 +9,7 @@ class Spree::PagesController < Spree::StoreController
 
   def contact_send
     @contact = Contact.new contact_params
+    ContactMailer.contact(@contact.email, @contact.body, @contact.title).deliver
     if @contact.save
       redirect_to contact_path, notice: "Wiadomość wysłana"
     else

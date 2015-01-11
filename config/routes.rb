@@ -14,6 +14,6 @@ Rails.application.routes.draw do
     end
     get "/kontakt", to: "pages#contact", as: :contact
     post "/kontakt", to: "pages#contact_send", as: :contact_send
-    get "/:slug", to: "pages#show"
+    get "/page/:slug", to: "pages#show"
   end
 end
