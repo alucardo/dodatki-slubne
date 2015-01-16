@@ -8,8 +8,6 @@ default: &default
   adapter: mysql2
   pool: 5
   timeout: 5000
-  username: root
-  password: 
 
 development:
   <<: *default
@@ -24,4 +22,6 @@ test:
 
 production:
   <<: *default
-  database: dodatki-prod
+  database: dodatki_production
+  username: root
+  password: zaq12wsx
