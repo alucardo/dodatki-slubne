@@ -15,7 +15,7 @@ end
 
 Spree.user_class = "Spree::User"
 
-if Rails.env.production?
-  Spree::Image.attachment_definitions[:attachment][:path] = 'spree/products/:id/:style/:basename.:extension'
-  Spree::Image.attachment_definitions[:attachment][:url] = 'spree/products/:id/:style/:basename.:extension'
-end
+# if Rails.env.production?
+#   Spree::Image.attachment_definitions[:attachment][:path] = 'spree/products/:id/:style/:basename.:extension'
+#   Spree::Image.attachment_definitions[:attachment][:url] = 'spree/products/:id/:style/:basename.:extension'
+# end
